@@ -1,0 +1,100 @@
+<!--doctype tells which version of html are we using, it tells the browser to render this file
+as a html 5 document-->
+<!--html tag tells us that everything inside is html code-->
+<!--head holds the information about the webpage-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--the line below - all text inside our webpage is encoded using the utf-8 encoding system-->
+  <!--utf-8 standard encoding when working with html 5, gives your website the biggest
+    chance to be rendered corectly-->
+  <meta charset="utf-8">
+  <!--img is command for picture; src is source - it can be from the internet
+or from local from the same directory as your html file; alt is for the alternative text - if <thead>
+  browser cannot render the image it will show the text to describe what the image is about - if you
+  are doing website optimization for google it is important to include words here so it will show up
+  in google search
+</thead>-->
+  <!--in order to display this picture browser is going to address below and asking
+for permission to download this picture, if it receive then it will show; if NOT (server is out, etc) then
+we won't have a picture; to avoid dependence on this site we can put an image to our html file
+We can then refer just by naming that picture file, because it is in the same place
+as our html document; if there is an image folder then you need a path image/-->
+
+  <title>Ben's personal site</title>
+</head>
+<!--cell spacing is an attribute for intering space between a picture and
+words in our case-->
+
+<body>
+  <table cellspacing="20">
+    <tr>
+      <td> <img src="Ben image.jpg" alt="ben profile picture"></td>
+      <td>
+        <h1>Ben Smith</h1>
+        <p><em>Founder and CTO of the <strong><a href="https://www.appbrewery.co/">App Brewery</a></strong>.</em></p>
+        <p>I am an iOS and Web Develope. I like coffee and brew my own beers.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!--a is anchor element; href is an attribute, then link where you taking the user
+    ;then the words that are going to be the actual link-->
+  <hr>
+  <h3>Books and Teaching</h3>
+  <ul>
+    <li>The complete iOS App Development Bootcamp</li>
+    <li>The complete Web Development Bootcamp</li>
+  </ul>
+  <hr>
+  <h3>Work experience</h3>
+  <!--table, tr table - raw, td - table data-->
+  <table cellspacing="10">
+    <!--th - table header, tbody, tfoot - footer-->
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>2010-2013</td>
+        <td>Lead Developer at Tempo App</td>
+      </tr>
+      <tr>
+        <td>2010</td>
+        <td>Researcher at Institute for Cognitive Neurosciences</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+
+  <table cellspacing="10">
+    <tr>
+      <td>
+    <tr>
+      <td>HTML</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Javascript</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+  </table>
+  <hr>
+  <!--we created another page hobbies.html and pasted the list of hobbies to that page-->
+  <a href="hobbies.html">My hobbies</a>
+  <p><a href="contact.html">Contact</a></p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--our website is encoded in utf-8-->
+  <meta charset="utf-8">
+  <title>Contact</title>
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <ul>
+    <li>Phone: 555-777</li>
+    <li>Address: Road 5</li>
+    <li>Canada</li>
+  </ul>
+</body>
+<hr>
+<!--action attribute is where it should take the user when he hits submit-->
+<!--mailto - when you click submit it takes you to the default address; post means
+that whatever user writes in the input field it will go to the email client;
+enctype means our website is encoded in plain text-->
+<form class="" action="mailto:info@londonappbrewery.com" method="post" enctype="text/plain">
+  <label>Your Name:</label>
+  <!--in order to store name info you need an input-->
+  <input type="text" name="yourName" value=""><br>
+  <label>Your Email:</label>
+  <input type="email" name="yourEmail" value=""><br>
+  <labe>Your message:</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea>
+    <input type="submit" name="">
+
+</form>
+
+</html>
